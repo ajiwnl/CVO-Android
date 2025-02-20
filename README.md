@@ -22,4 +22,4 @@ CVO Android Repository Link: ***[Web repo](https://github.com/soliken1/CVO-App)*
 
 CVO Web Repository Link: ***[Android repo](https://github.com/ajiwnl/CVO-Android)***
 
-CVO Pythob Repository Link: ***[](https://github.com/ajiwnl/CVO-faq)***
+CVO Python Repository Link: ***[Py repo](https://github.com/ajiwnl/CVO-faq)***
