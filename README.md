@@ -3,6 +3,7 @@
 ## Techstack:
 
 ![Android](https://img.shields.io/badge/Android-Java-green)
+![Java](https://img.shields.io/badge/Java-17-red)
 ![Firebase](https://img.shields.io/badge/Firebase-Database-orange)
 ![React](https://img.shields.io/badge/React-18.x-blue)
 ![Vite](https://img.shields.io/badge/Vite-4.x-purple)
