@@ -24,10 +24,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private WebView mywebView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private ValueCallback<Uri[]> filePathCallback;
     private ActivityResultLauncher<Intent> fileChooserLauncher;
 
@@ -36,15 +39,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
         mywebView = findViewById(R.id.webview1);
         mywebView.setWebViewClient(new WebViewClient());
         mywebView.setWebChromeClient(new MyWebChromeClient());
         mywebView.loadUrl("https://cvoapp.vercel.app/");
 
+        mywebView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
+
         WebSettings webSettings = mywebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowFileAccess(true);
         webSettings.setDomStorageEnabled(true);
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mywebView.reload();
+            }
+        });
+
 
         // Register file chooser launcher
         fileChooserLauncher = registerForActivityResult(
