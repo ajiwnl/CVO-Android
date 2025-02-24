@@ -11,7 +11,6 @@
 ![JSX](https://img.shields.io/badge/JSX-Syntax-lightblue)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.0+-black)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-orange)
 ![CORS](https://img.shields.io/badge/CORS-Enabled-green)
 
 ## Authors: 
