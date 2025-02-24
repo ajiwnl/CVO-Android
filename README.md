@@ -25,11 +25,4 @@ CVO Web Repository Link: ***[Android repo](https://github.com/ajiwnl/CVO-Android
 
 CVO Python Repository Link: ***[Py repo](https://github.com/ajiwnl/CVO-faq)***
 
-![image](https://github.com/user-attachments/assets/d961263c-dbc0-492d-9a58-026cd15d26bc)
-
-## Repository Links:
-CVO Web Repository Link: ***[Web repo](https://github.com/soliken1/CVO-App)***
-
-CVO Android Repository Link: ***[Android repo](https://github.com/ajiwnl/CVO-Android)***
-
-CVO Python Repository Link: ***[Py repo](https://github.com/ajiwnl/CVO-faq)***
+![VCO](https://github.com/user-attachments/assets/5bbd4783-09ea-4779-9cf2-220b969d6d38)
