@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                                 "    let reader = new FileReader();" +
                                 "    reader.readAsDataURL(blob);" +
                                 "    reader.onloadend = function() {" +
-                                "        window.android.downloadBlob(reader.result, 'cvo_certificate_1.pdf');" +
+                                "        window.android.downloadBlob(reader.result, 'CVO Pet Travel Certificate.pdf');" +
                                 "    };" +
                                 "})();",
                         null
